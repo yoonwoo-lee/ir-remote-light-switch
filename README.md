@@ -49,7 +49,10 @@ and a few things genuinely tripped me up:
 - Adaptation: Initially, I was going to just have two chopsticks run down
   perpendicular to the servo horn to flip the light switches, but I
   quickly realized that it didn't exert enough force, so I added extra support
-  to form a triangle shape, which I heard was the best shape for stability. 
+  to form a triangle shape, which I heard was the best shape for stability. Also,
+  I had to figure out the IR hex codes of my remote, because the tutorial code that
+  came with the kit was configured for an older version. The code to figure out a remote's
+  IR hexcode could also be found in the src file.
 
 ## Future Improvements
 - Mount refinements for more reliable switch alignment
