@@ -9,6 +9,9 @@ As someone who is always up late at night studying, I found myself often falling
 - Servo motor
 - IR remote
 - Breadboard + jumper wires (female-to-male and male-to-male)
+- Double-sided adhesive
+- Wooden Chopsticks
+- Styrofoam
 
 ## How It Works
 Brief explanation: IR remote sends a signal → IR receiver decodes it → 
@@ -17,7 +20,7 @@ returns to neutral after 3 seconds so the switch can still be used manually.
 
 ## Installation / Setup
 1. Wire the IR receiver to pin 11, servo to pin 9 (adjust as needed)
-2. Install the IRremote library via Arduino IDE Library Manager
+2. Install the IRremote library and Servo Library via Arduino IDE Library Manager
 3. Upload the sketch
 4. Point remote at receiver, press assigned buttons to toggle
 
@@ -43,7 +46,14 @@ and a few things genuinely tripped me up:
   meaning the switch can always still be used manually, regardless of 
   what the servo last did.
 
+- Adaptation: Initially, I was going to just have two chopsticks run down
+  perpendicular to the servo horn to flip the light switches, but I
+  quickly realized that it didn't exert enough force, so I added extra support
+  to form a triangle shape, which I heard was the best shape for stability. 
+
 ## Future Improvements
 - Mount refinements for more reliable switch alignment
-- Possibly support multiple light switches
+- Stronger servo
 - Clean up wiring with a proper enclosure instead of a breadboard
+- Replace adhesive material with screws
+- Use an external powerbank that could power the servo and the arduino board (you can see my failed attempt at the battery in the video)
